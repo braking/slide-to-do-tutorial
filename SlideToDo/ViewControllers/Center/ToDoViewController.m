@@ -11,8 +11,9 @@
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 
-@interface ToDoViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ToDoViewController () <UITableViewDataSource, UITableViewDelegate, MenuViewControllerDelegate>
 @property (nonatomic, weak) IBOutlet UINavigationItem *navigationTitle;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *toDoCategories;
 @property (nonatomic, assign) NSInteger selectedCategory;
 @end
@@ -49,6 +50,7 @@
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
         self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuView"];
         [(MenuViewController *)self.slidingViewController.underLeftViewController setCategoryList:self.toDoCategories];
+        [(MenuViewController *)self.slidingViewController.underLeftViewController setDelegate:self];
     }
     
     // Add the pan gesture to allow sliding
@@ -72,6 +74,16 @@
     cell.textLabel.text = currentCategory[@"items"][indexPath.row];
     
     return cell;
+}
+
+#pragma mark - MenuViewController Delegate
+
+- (void)menuViewControllerDidFinishWithCategoryId:(NSInteger)categoryId
+{
+    self.selectedCategory = categoryId;
+    self.navigationTitle.title = self.toDoCategories[self.selectedCategory][@"title"];
+    [self.tableView reloadData];
+    [self.slidingViewController resetTopView];
 }
 
 @end

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MenuViewControllerDelegate;
+
 @interface MenuViewController : UIViewController
+@property (nonatomic, weak) id <MenuViewControllerDelegate> delegate;
 @property (nonatomic, strong) NSArray *categoryList;
+@end
+
+
+@protocol MenuViewControllerDelegate
+-(void)menuViewControllerDidFinishWithCategoryId:(NSInteger)categoryId;
 @end

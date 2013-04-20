@@ -105,6 +105,7 @@
                     </view>
                     <connections>
                         <outlet property="navigationTitle" destination="jTP-E9-rbR" id="4sN-Iy-vkN"/>
+                        <outlet property="tableView" destination="N5b-SR-CNj" id="TJj-Vg-dHF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrH-Jd-ZN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,6 +130,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ToDoViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="navigationTitle" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
     </classes>

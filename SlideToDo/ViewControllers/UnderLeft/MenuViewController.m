@@ -44,4 +44,11 @@
     return cell;
 }
 
+#pragma mark - Tableview Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.delegate menuViewControllerDidFinishWithCategoryId:indexPath.row];
+}
+
 @end
