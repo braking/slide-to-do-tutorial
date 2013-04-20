@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93044E3F1722DF3100EEEF02 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93044E3E1722DF3100EEEF02 /* MenuViewController.m */; };
 		934DBD391720AEEF0035EDBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934DBD381720AEEF0035EDBD /* UIKit.framework */; };
 		934DBD3B1720AEEF0035EDBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934DBD3A1720AEEF0035EDBD /* Foundation.framework */; };
 		934DBD3D1720AEEF0035EDBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934DBD3C1720AEEF0035EDBD /* CoreGraphics.framework */; };
@@ -17,10 +18,16 @@
 		934DBD4D1720AEEF0035EDBD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 934DBD4C1720AEEF0035EDBD /* Default@2x.png */; };
 		934DBD4F1720AEEF0035EDBD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 934DBD4E1720AEEF0035EDBD /* Default-568h@2x.png */; };
 		934DBD521720AEEF0035EDBD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934DBD501720AEEF0035EDBD /* MainStoryboard.storyboard */; };
-		934DBD551720AEEF0035EDBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934DBD541720AEEF0035EDBD /* ViewController.m */; };
+		934DBD611720B72A0035EDBD /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934DBD5E1720B72A0035EDBD /* ECSlidingViewController.m */; };
+		934DBD621720B72A0035EDBD /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 934DBD601720B72A0035EDBD /* UIImage+ImageWithUIView.m */; };
+		934DBD641720B9720035EDBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934DBD631720B9720035EDBD /* QuartzCore.framework */; };
+		934DBD691720BB100035EDBD /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934DBD681720BB100035EDBD /* InitialSlidingViewController.m */; };
+		934DBD6C1720BD5F0035EDBD /* ToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934DBD6B1720BD5F0035EDBD /* ToDoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93044E3D1722DF3100EEEF02 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ViewControllers/UnderLeft/MenuViewController.h; sourceTree = "<group>"; };
+		93044E3E1722DF3100EEEF02 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewControllers/UnderLeft/MenuViewController.m; sourceTree = "<group>"; };
 		934DBD351720AEEF0035EDBD /* SlideToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934DBD381720AEEF0035EDBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		934DBD3A1720AEEF0035EDBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,8 +42,15 @@
 		934DBD4C1720AEEF0035EDBD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		934DBD4E1720AEEF0035EDBD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		934DBD511720AEEF0035EDBD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		934DBD531720AEEF0035EDBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		934DBD541720AEEF0035EDBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		934DBD5D1720B72A0035EDBD /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		934DBD5E1720B72A0035EDBD /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		934DBD5F1720B72A0035EDBD /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		934DBD601720B72A0035EDBD /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		934DBD631720B9720035EDBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		934DBD671720BB100035EDBD /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialSlidingViewController.h; path = ViewControllers/Center/InitialSlidingViewController.h; sourceTree = "<group>"; };
+		934DBD681720BB100035EDBD /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialSlidingViewController.m; path = ViewControllers/Center/InitialSlidingViewController.m; sourceTree = "<group>"; };
+		934DBD6A1720BD5F0035EDBD /* ToDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToDoViewController.h; path = ViewControllers/Center/ToDoViewController.h; sourceTree = "<group>"; };
+		934DBD6B1720BD5F0035EDBD /* ToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToDoViewController.m; path = ViewControllers/Center/ToDoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934DBD641720B9720035EDBD /* QuartzCore.framework in Frameworks */,
 				934DBD391720AEEF0035EDBD /* UIKit.framework in Frameworks */,
 				934DBD3B1720AEEF0035EDBD /* Foundation.framework in Frameworks */,
 				934DBD3D1720AEEF0035EDBD /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93044E3C1722DECF00EEEF02 /* Under Left */ = {
+			isa = PBXGroup;
+			children = (
+				93044E3D1722DF3100EEEF02 /* MenuViewController.h */,
+				93044E3E1722DF3100EEEF02 /* MenuViewController.m */,
+			);
+			name = "Under Left";
+			sourceTree = "<group>";
+		};
 		934DBD2C1720AEEF0035EDBD = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +97,7 @@
 		934DBD371720AEEF0035EDBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				934DBD631720B9720035EDBD /* QuartzCore.framework */,
 				934DBD381720AEEF0035EDBD /* UIKit.framework */,
 				934DBD3A1720AEEF0035EDBD /* Foundation.framework */,
 				934DBD3C1720AEEF0035EDBD /* CoreGraphics.framework */,
@@ -86,8 +111,8 @@
 				934DBD501720AEEF0035EDBD /* MainStoryboard.storyboard */,
 				934DBD471720AEEF0035EDBD /* AppDelegate.h */,
 				934DBD481720AEEF0035EDBD /* AppDelegate.m */,
-				934DBD531720AEEF0035EDBD /* ViewController.h */,
-				934DBD541720AEEF0035EDBD /* ViewController.m */,
+				934DBD651720BA730035EDBD /* ViewControllers */,
+				934DBD5B1720B72A0035EDBD /* Vendor */,
 				934DBD3F1720AEEF0035EDBD /* Supporting Files */,
 			);
 			path = SlideToDo;
@@ -105,6 +130,45 @@
 				934DBD4E1720AEEF0035EDBD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		934DBD5B1720B72A0035EDBD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				934DBD5C1720B72A0035EDBD /* ECSlidingViewController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		934DBD5C1720B72A0035EDBD /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934DBD5D1720B72A0035EDBD /* ECSlidingViewController.h */,
+				934DBD5E1720B72A0035EDBD /* ECSlidingViewController.m */,
+				934DBD5F1720B72A0035EDBD /* UIImage+ImageWithUIView.h */,
+				934DBD601720B72A0035EDBD /* UIImage+ImageWithUIView.m */,
+			);
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		934DBD651720BA730035EDBD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93044E3C1722DECF00EEEF02 /* Under Left */,
+				934DBD661720BA930035EDBD /* Center */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		934DBD661720BA930035EDBD /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				934DBD671720BB100035EDBD /* InitialSlidingViewController.h */,
+				934DBD681720BB100035EDBD /* InitialSlidingViewController.m */,
+				934DBD6A1720BD5F0035EDBD /* ToDoViewController.h */,
+				934DBD6B1720BD5F0035EDBD /* ToDoViewController.m */,
+			);
+			name = Center;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +239,11 @@
 			files = (
 				934DBD451720AEEF0035EDBD /* main.m in Sources */,
 				934DBD491720AEEF0035EDBD /* AppDelegate.m in Sources */,
-				934DBD551720AEEF0035EDBD /* ViewController.m in Sources */,
+				934DBD611720B72A0035EDBD /* ECSlidingViewController.m in Sources */,
+				934DBD621720B72A0035EDBD /* UIImage+ImageWithUIView.m in Sources */,
+				934DBD691720BB100035EDBD /* InitialSlidingViewController.m in Sources */,
+				934DBD6C1720BD5F0035EDBD /* ToDoViewController.m in Sources */,
+				93044E3F1722DF3100EEEF02 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +366,7 @@
 				934DBD5A1720AEEF0035EDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
