@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93044E3F1722DF3100EEEF02 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93044E3E1722DF3100EEEF02 /* MenuViewController.m */; };
+		93044E431722FA2A00EEEF02 /* nav-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 93044E411722FA2A00EEEF02 /* nav-bar.png */; };
+		93044E441722FA2A00EEEF02 /* nav-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93044E421722FA2A00EEEF02 /* nav-bar@2x.png */; };
 		934DBD391720AEEF0035EDBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934DBD381720AEEF0035EDBD /* UIKit.framework */; };
 		934DBD3B1720AEEF0035EDBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934DBD3A1720AEEF0035EDBD /* Foundation.framework */; };
 		934DBD3D1720AEEF0035EDBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934DBD3C1720AEEF0035EDBD /* CoreGraphics.framework */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		93044E3D1722DF3100EEEF02 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ViewControllers/UnderLeft/MenuViewController.h; sourceTree = "<group>"; };
 		93044E3E1722DF3100EEEF02 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewControllers/UnderLeft/MenuViewController.m; sourceTree = "<group>"; };
+		93044E411722FA2A00EEEF02 /* nav-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar.png"; sourceTree = "<group>"; };
+		93044E421722FA2A00EEEF02 /* nav-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar@2x.png"; sourceTree = "<group>"; };
 		934DBD351720AEEF0035EDBD /* SlideToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934DBD381720AEEF0035EDBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		934DBD3A1720AEEF0035EDBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +81,15 @@
 			name = "Under Left";
 			sourceTree = "<group>";
 		};
+		93044E401722FA2A00EEEF02 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				93044E411722FA2A00EEEF02 /* nav-bar.png */,
+				93044E421722FA2A00EEEF02 /* nav-bar@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		934DBD2C1720AEEF0035EDBD = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 		934DBD3F1720AEEF0035EDBD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93044E401722FA2A00EEEF02 /* Assets */,
 				934DBD401720AEEF0035EDBD /* SlideToDo-Info.plist */,
 				934DBD411720AEEF0035EDBD /* InfoPlist.strings */,
 				934DBD441720AEEF0035EDBD /* main.m */,
@@ -227,6 +241,8 @@
 				934DBD4D1720AEEF0035EDBD /* Default@2x.png in Resources */,
 				934DBD4F1720AEEF0035EDBD /* Default-568h@2x.png in Resources */,
 				934DBD521720AEEF0035EDBD /* MainStoryboard.storyboard in Resources */,
+				93044E431722FA2A00EEEF02 /* nav-bar.png in Resources */,
+				93044E441722FA2A00EEEF02 /* nav-bar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

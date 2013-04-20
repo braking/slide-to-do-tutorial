@@ -11,7 +11,10 @@
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 
-@interface ToDoViewController ()
+@interface ToDoViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UINavigationItem *navigationTitle;
+@property (nonatomic, strong) NSArray *toDoCategories;
+@property (nonatomic, assign) NSInteger selectedCategory;
 @end
 
 
@@ -20,7 +23,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    NSDictionary *choresDictionary = @{@"title": @"Chores",
+                                       @"items": @[@"Sweep", @"Dishes", @"Mow the lawn"]};
+    NSDictionary *workDictionary = @{@"title": @"Work",
+                                     @"items": @[@"TPS Report"]};
+    NSDictionary *groceryDictionary = @{@"title": @"Grocery List",
+                                        @"items": @[@"Chips", @"Salsa", @"Fruit snacks", @"Beer"]};
+    
+    self.toDoCategories = @[choresDictionary, workDictionary, groceryDictionary];
+    self.selectedCategory = 0;
+    self.navigationTitle.title = self.toDoCategories[self.selectedCategory][@"title"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -35,10 +48,30 @@
     // Tell it which view should be created under left
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
         self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuView"];
+        [(MenuViewController *)self.slidingViewController.underLeftViewController setCategoryList:self.toDoCategories];
     }
     
     // Add the pan gesture to allow sliding
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+}
+
+#pragma mark - Tableview DataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    NSDictionary *currentCategory = self.toDoCategories[self.selectedCategory];
+    return [currentCategory[@"items"] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    NSDictionary *currentCategory = self.toDoCategories[self.selectedCategory];
+    cell.textLabel.text = currentCategory[@"items"][indexPath.row];
+    
+    return cell;
 }
 
 @end
